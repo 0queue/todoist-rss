@@ -34,7 +34,7 @@ type result struct {
 }
 
 func (c *Client) GetTasks(ctx context.Context, label string) ([]Task, error) {
-	u, err := url.Parse("https://todoist.com/api/v1/tasks")
+	u, err := url.Parse("https://api.todoist.com/api/v1/tasks")
 	if err != nil {
 		return nil, fmt.Errorf("url parse: %w", err)
 	}

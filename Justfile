@@ -18,4 +18,4 @@ miniflux:
 export KO_DOCKER_REPO := "ghcr.io/0queue/todoist-rss"
 
 publish:
-    go run github.com/google/ko@v0.18.0 build --bare --tags=v0.1.0 ./cmd/todoist-rss
+    go run github.com/google/ko@v0.18.0 build --bare --tags=v0.1.1 ./cmd/todoist-rss
